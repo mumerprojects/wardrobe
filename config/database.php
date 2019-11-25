@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'https://fypwardrobe.herokuapp.com',
+            'url' => 'fypwardrobe.herokuapp.com',
             'host' => 'SG-fypwardrobe-1569-master.servers.mongodirector.com',
             'port' => '3306',
             'database' => 'wardrobe',
