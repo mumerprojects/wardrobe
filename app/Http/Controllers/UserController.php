@@ -8,6 +8,10 @@ use DB;
 use Mail;
 class UserController extends Controller
 {
+	Public function testCall()
+    {
+		return response()->json('Salam');
+	}
 	//Method to register the User
    Public function userRegister(Request $request)
     {

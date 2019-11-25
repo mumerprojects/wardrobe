@@ -42,6 +42,8 @@ Route::group(['middleware'=>['api','cors']],function(){
 	Route::get('User/getDressData/{ID}','UserController@getDressData');
 	//To check wether the ad user and viewing user is same.
 	Route::get('User/getAdVer/{EMAIL}','UserController@getAdVer');
+	
+	Route::get('User/testCall','UserController@testCall');
 
 	//To Upload the picture
 	Route::post('User/uploadPic','UserController@uploadPic');
