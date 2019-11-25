@@ -45,12 +45,12 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
-            'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'url' => 'https://fypwardrobe.herokuapp.com',
+            'host' => 'SG-fypwardrobe-1569-master.servers.mongodirector.com',
+            'port' => '3306',
+            'database' => 'wardrobe',
+            'username' => 'kamranhani',
+            'password' => 'Master*3Key',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8',
             'collation' => 'utf8_unicode_ci',
