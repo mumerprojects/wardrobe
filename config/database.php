@@ -45,22 +45,17 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'fypwardrobe.herokuapp.com',
-            'host' => 'SG-fypwardrobe-1569-master.servers.mongodirector.com',
-            'port' => '3306',
-            'database' => 'wardrobe',
-            'username' => 'kamranhani',
-            'password' => 'Master*3Key',
+            'host' => env('DB_HOST', 'db4free.net'),
+            'port' => env('DB_PORT', '3306'),
+            'database' => env('DB_DATABASE', 'wardroberental'),
+            'username' => env('DB_USERNAME', 'hanikamran'),
+            'password' => env('DB_PASSWORD', 'c829a08a'),
             'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8',
-            'collation' => 'utf8_unicode_ci',
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
-            'prefix_indexes' => true,
             'strict' => true,
             'engine' => null,
-            'options' => extension_loaded('pdo_mysql') ? array_filter([
-                PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
-            ]) : [],
         ],
 
         'pgsql' => [
