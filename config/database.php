@@ -45,11 +45,11 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', 'db4free.net'),
+            'host' => env('DB_HOST', 'SG-wardrobe-1593-master.servers.mongodirector.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'wardroberental'),
-            'username' => env('DB_USERNAME', 'hanikamran'),
-            'password' => env('DB_PASSWORD', 'c829a08a'),
+            'database' => env('DB_DATABASE', 'dbwardrobe'),
+            'username' => env('DB_USERNAME', 'dbuser'),
+            'password' => env('DB_PASSWORD', 'Master#3key'),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
